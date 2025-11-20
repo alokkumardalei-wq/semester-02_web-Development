@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <script src="./script4.js"></script> -->
+     <h2>DOM Manipulation Demo</h2>
+     <p id="intro">Welcome to Jvascript DOM!</p>
+<script>
+//Find Element
+let introElement=document.getElementById("intro");
+
+// Change text
+introElement.innerText="hii";
+//change background color 
+document.body.style.backgroundColor="pink"
+// create new Element
+let newPara2=document.createElement("p");
+newPara2.innerText="I was  created using javascript -2";
+document.body.appendChild(newPara2);
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        
+    </div>
+<input type="text" placeholder="Type..." id="input">
+    <script>
+
+        const a=document.getElementById("box");
+        a.addEventListener("click",function onclick(){
+            a.style.backgroundColor="red";
+        }
+    
+);
+
+// 2.KeyPress event
+const input=document.getElementById(input);
+input.addEventListener("keypress",(event) => {
+    console.log(event.key);
+})
+        
+
+    </script>
+</body>
+</html>

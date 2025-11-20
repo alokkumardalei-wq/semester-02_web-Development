@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays and Objects</h1>
+    <script>
+        let numbers=[10,20,30];
+        console.log("Array",numbers);
+        console.log("First elem:",numbers[0]);
+        const n=numbers.length;
+console.log("Last element:" ,numbers[n-1]);
+//modify array
+numbers.push(40);
+console.log("after push:", numbers);
+numbers.pop();
+console.log("after pop:",numbers);
+
+//loop
+for(let i=0;i<numbers.lenght;i++){
+    console.log(numbers[i]);
+}
+
+// search
+console.log("Index of 20:", numbers.indexOf(20));
+// obj practice
+let student1={
+name:"Arjun",
+DOB:"01/06/1990",
+grade:"10th",
+age: function(){
+
+},
+greet(){
+console.log("Hi I'm:",this.name);
+}
+,
+
+};
+
+let student2={
+name:"Karan",
+DOB:"01/06/1990",
+grade:"10th",
+age: function(){
+
+},
+greet(){
+console.log("Hi I'm:",this.name);
+}
+
+};
+
+//accessing values
+console.log(student1.name);
+console.log(student2.name);
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,4 +1,4 @@
-//Arrays provide ordered collection of data.
+// Arrays provide ordered collection of data.
 var arr=[12,'String',true,8.9];
 
 console.log(arr);
@@ -41,6 +41,9 @@ console.log(d);
 
 // unshift.
 
-arr2.unshift();
+var x=arr2.unshift();
+//
+// console.log(x);
 
-console.log(arr2);
+
+
