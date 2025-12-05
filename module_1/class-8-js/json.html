@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON (Javascript Object Notation)</title>
+</head>
+<body>
+    -It is string.
+    -Looks like an object 
+    -Is not an object until you convert it
+
+    <script>
+        let jsonStr='{"name:Asha","age":16}';
+        let obj =JSON.parse(jsonStr);
+        console.log(obj);
+        //Before sending data through api
+
+        // let jsonData=JSON.stringify(jsonStr);
+        // console.log(jsonData);
+ 
+    </script>
+</body>
+</html>

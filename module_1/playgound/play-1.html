@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: rgb(10, 10, 104);
+        } */
+#demo{
+    color: red;
+}
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <input type="text" placeholder="Enter your name..." id="input">
+        <button id="onclick">Submit</button>
+    </div>
+    <p id="demo"></p>
+<ul id="list">
+
+</ul>
+    <script>
+let a=document.querySelector("#input");
+let b=document.querySelector("#onclick");
+let r=document.querySelector("#list");
+let s=r.length;
+b.addEventListener("click",function(){
+    let x=input.value;  
+    let y=x.length;
+    if(y>40 || x===""){
+
+   let z=document.createElement("p");
+    z.textContent="Enter a valid user name!";
+    
+    document.getElementById("demo").innerHTML=z.textContent;
+}
+    else{
+let d=document.createElement("li");
+d.textContent=input.value;
+let f=document.getElementById("list");
+f.appendChild(d);
+ let z=document.querySelector("#demo");
+ let e=z.length;
+ if(e!=0){
+     document.getElementById("demo").innerHTML=z.remove();
+ }
+
+    }
+    a.value="";
+
+});
+
+
+
+
+    </script>
+    
+</body>
+</html>

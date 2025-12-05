@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6 features</title>
+</head>
+<body>
+    <script>
+        //arrow functions
+        const add=(a,b)=>
+            a+b;
+        
+        let a=add(3,4);
+        console.log(a);
+
+        // template string
+        let b="Alok";
+        console.log(`Hello! My name is ${b}.Thank you`);
+
+        console.log(
+        `   Line1
+            line 2
+            line3 
+            
+        `
+        )
+        // Destructuring
+        let colors=["red","green","blue"];
+        let [f,s,t]=colors;
+        console.log(f);
+        console.log(s);
+        let student={
+            name:"Kabir",
+            age:16,
+            city:"Mumbai",
+
+
+        };
+        let {name,age}=student;
+        console.log(name,age);
+    //spread operator
+    let ar1=[1,2,3];
+    let ar2=[...ar1,4,5,6];
+    console.log(ar2);
+    let p1={x: 10 ,y: 20};
+    let p2={...p1, z: 50};
+console.log(p2);
+//Rest operator ...
+function sumNumbers(...nums){
+    return nums.reduce(function(total,num){
+        return total+num;
+    })
+
+}
+let result=sumNumbers(1,2,3,4,5);
+console.log(result);
+
+let [x,y,...rest]=[10,20,30,40,50];
+console.log(rest);
+// shallow copyig and deep copying
+let person={name:"Asha",city:"Mumbai"};
+let p=person; //shallow copying --> new variable pointing to same heap address .(Alias);
+let p3={...person}; //deep copying --> new object with duplicate content ;
+person.name="Beta";
+conaole.log(p.name);
+conaole.log(p2.name);
+
+
+    </script>
+    
+</body>
+</html>
