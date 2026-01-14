@@ -9,8 +9,12 @@
     <script>
         let a=prompt("Enter your tweet");
 let x=a.slice(0,1);
+if(x===x.toUpperCase()){
+    a=x.toLowerCase()+a.slice(1);
+}
+else{
        a=x.toUpperCase()+a.slice(1);
-       
+} 
     //    if(a.length>140){
     //     let b=(a.slice(0,140));
     //     alert(b);

@@ -15,15 +15,24 @@ nst--;
 
 let ro=4;
 let spaces=ro-1;
+let stars=1;
 for(let i=1;i<=ro;i++){
+      let str=" ";
+        let st=""; 
     for(let j=1;j<=spaces;j++){
-        let str=" ";
-        str+=j;
+       
+        
+        str+=" ";
 
     }
-    for(let j=1;j<=(2*i)-1;j++){
-        let st="*"; 
-    st+=j;
+     
+    for(let j=1;j<=stars;j++){
+       
+      
+    st+="*";
     }
-    
+    console.log(str+st);
+    spaces--;
+    stars+=2;
+        
 }

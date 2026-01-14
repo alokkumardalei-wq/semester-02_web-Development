@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="./ply.js"></script>
+    <script>
+        let x="Alok is  an idiot";
+        console.log(x.toLowerCase());
+        console.log(x.toLocaleLowerCase());
+        console.log(x.toUpperCase());
+        console.log(x.toLocaleUpperCase());
+        
+
+     function stringMerge(word1,word2){
+let a=0
+let b=1
+let c=1;
+let st="";
+while(b<=word1.length){
+st=st.concat(word1[a]+word2[c]+word1[b]);
+a++;
+b++;
+c++;
+}
+        };
+
+      let ans=stringMerge("abc","pqr");
+      console.log(ans);
+    </script>
+</body>
+</html>

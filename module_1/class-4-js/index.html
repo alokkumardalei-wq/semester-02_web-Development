@@ -16,14 +16,26 @@
     <!-- <script src="./script4.js"></script> -->
      <h2>DOM Manipulation Demo</h2>
      <p id="intro">Welcome to Jvascript DOM!</p>
+
+    <button class="button">Click me!</button>
 <script>
 //Find Element
 let introElement=document.getElementById("intro");
-
+let button=document.querySelector(".button");
 // Change text
 introElement.innerText="hii";
 //change background color 
-document.body.style.backgroundColor="pink"
+document.body.style.textDecoration="underline";
+button.addEventListener("click",function() { 
+
+if(document.body.style.textDecoration=="underline"){
+    document.body.style.textDecoration="none"
+}
+else{
+document.body.style.textDecoration="underline"
+}
+}
+);
 // create new Element
 let newPara2=document.createElement("p");
 newPara2.innerText="I was  created using javascript -2";

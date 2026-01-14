@@ -6,6 +6,8 @@
     <title>ES6 features</title>
 </head>
 <body>
+
+    <p id="date"></p>
     <script>
         //arrow functions
         const add=(a,b)=>
@@ -63,10 +65,16 @@ let person={name:"Asha",city:"Mumbai"};
 let p=person; //shallow copying --> new variable pointing to same heap address .(Alias);
 let p3={...person}; //deep copying --> new object with duplicate content ;
 person.name="Beta";
-conaole.log(p.name);
-conaole.log(p2.name);
-
-
+console.log(p.name);
+console.log(p2.name);
+let date=Date()
+date.trim()
+let k=date.split();
+console.log(k);
+let o=document.getElementById("date");
+o.textContent=Date();
+alert(date)
+//o.appendChild("p");
     </script>
     
 </body>
