@@ -1,1 +1,1 @@
-You can find find sem-02 codes in module_01/semester-02.
+You can find find sem-02 codes in module_1/semester-02.
